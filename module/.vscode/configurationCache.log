@@ -1,0 +1,1 @@
+{"buildTargets":["all","build","docker-build","go.sum","install","lint","proto-all","proto-check-breaking","proto-format","proto-gen","proto-lint","proto-update-deps","test"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}

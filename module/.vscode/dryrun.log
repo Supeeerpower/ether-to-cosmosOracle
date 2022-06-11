@@ -1,0 +1,12 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/dev/sapians/gravity-bridge-main/module'
+ 
+fatal: bad revision 'HEAD'
+
+fatal: your current branch 'master' does not have any commits yet
+
+echo "--> Ensure dependencies have not been modified"
+GO111MODULE=on go mod verify
+go install -ldflags '-X github.com/cosmos/cosmos-sdk/version.Name=gravity -X github.com/cosmos/cosmos-sdk/version.AppName=gravity -X github.com/cosmos/cosmos-sdk/version.Version= -X github.com/cosmos/cosmos-sdk/version.Commit= -X "github.com/cosmos/cosmos-sdk/version.BuildTags=netgo" ' -gcflags="all=-N -l" ./cmd/gravity
+make: Leaving directory '/home/dev/sapians/gravity-bridge-main/module'
+ 
